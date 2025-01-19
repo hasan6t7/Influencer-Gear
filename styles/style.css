@@ -24,8 +24,12 @@ body{
 /* Header Section style  */
 
 .navbar{
+    max-width: 1160px;
+    margin: auto;
     justify-content: space-between;
     margin-top: 50px;
+    align-items: center;
+
 }
 nav ul{
     gap: 34px;
@@ -105,10 +109,8 @@ nav a{
 /* collection section style  */
 .collection{
     max-width: 1047px;
-    height: 1662px;
     margin: 100px auto; 
-    
-
+   
 
 }
 .collection-title{
@@ -161,8 +163,99 @@ nav a{
     color: rgba(224, 44, 109, 0.87);
     font-size: 1rem;
     font-weight: 700;
-    margin-left: 948px;
+    margin-left: 940px;
 }
+
+/* Featured Product style  */
+
+.featured-product-container{
+    max-width: 1140px;
+    margin: 100px auto 100px auto;
+    
+    display: flex;
+    gap: 96px;
+
+}
+.featured-image{
+    
+    width: 404px;
+    border-radius: 7px;
+    margin: 0 auto;
+}
+.featured-image img{
+    width: 100%;
+    height: 270px;
+    
+}
+.featured-content{
+    text-align: left;
+
+}
+.featured-title{
+    font-size: 2.3rem;
+    color: rgb(10, 8, 38);
+    margin: 23px 0px 16px 0px;
+    font-weight: 700;
+}
+.featured-description{
+    font-size: 1rem;
+    color: rgb(108, 108, 108);
+    margin: 0px 0px 16px 0px;
+    font-weight: 700;
+    width: 501px;
+
+}
+.featured-btn{
+    width: 155px;
+    height: 44px;
+    padding: 10px, 24px, 10px, 24px;
+    background-color: rgb(224, 44, 109);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+/* Footer section style  */
+
+footer{
+    margin:0 auto;
+    background-color: rgb(10, 8, 38);
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-content{
+    
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    
+}
+footer .footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0px 0px 3px 0px;
+    
+    
+
+}
+footer .subtitle,p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0px;
+    
+}
+footer .icon{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 
 
 /* small Device Media Query */
@@ -171,8 +264,11 @@ nav a{
 @media screen and (max-width:576px) {
     .navbar{
         flex-direction: column;
-        justify-items: center;
+        justify-items: left;
         
+    }
+    nav ul{
+        gap: 20px;
     }
     .navtitle{
         text-align: center;
@@ -199,10 +295,25 @@ nav a{
         justify-items: center;
     }
     .collection a{
-        margin-left: 320px;
+        margin-left: 200px;
+    }
+    .featured-product-container{
+        flex-direction: column;
+        max-width: 576px;
+        justify-items: center;
+        
+    }
+    
+    .featured-description{
+        width: 100%;
+    }
+    .featured-content{
+        text-align: center;
+    
     }
 
 
+    
     
 }
 
@@ -232,7 +343,18 @@ nav a{
         justify-items: center;
     }
     .collection a{
-        margin-left: 800px;
+        margin-left: auto;
     }
+    .featured-product-container{
+        flex-direction: column;
+        max-width: 576px;
+        justify-items: center;
+        
+    }
+    .featured-content{
+        text-align: center;
+    
+    }
+    
     
 }
