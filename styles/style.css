@@ -10,6 +10,9 @@ body{
     max-width: 1440px;
     margin: 0 auto;
 }
+img{
+    max-width: 100%;
+}
 
 /* Shared style  */
 
@@ -29,10 +32,12 @@ body{
     justify-content: space-between;
     margin-top: 50px;
     align-items: center;
+    
 
 }
 nav ul{
     gap: 34px;
+    flex-wrap: wrap;
 }
 nav li{
     list-style: none;
@@ -103,32 +108,35 @@ nav a{
     margin: 100px auto;
     justify-content: center;
     padding: 36px 61px 34px 61px;
+    margin: auto;
 }
 
 
 /* collection section style  */
 .collection{
     max-width: 1047px;
-    margin: 100px auto; 
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
    
 
 }
 .collection-title{
     font-size: 1.75rem;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
 }
 .card-container{
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-}
-
-.card{
-    width:329px ;
-    height:476px ;
     
 }
+
+
 .card-image{
     margin: 17px 15px 16px 14px;
 }
@@ -178,13 +186,12 @@ nav a{
 }
 .featured-image{
     
-    width: 404px;
+    max-width: 404px;
     border-radius: 7px;
     margin: 0 auto;
 }
 .featured-image img{
     width: 100%;
-    height: 270px;
     
 }
 .featured-content{
@@ -202,7 +209,7 @@ nav a{
     color: rgb(108, 108, 108);
     margin: 0px 0px 16px 0px;
     font-weight: 700;
-    width: 501px;
+    max-width: 501px;
 
 }
 .featured-btn{
@@ -285,17 +292,22 @@ footer .icon{
     .sponsor{
         
         margin:0 auto;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         margin-top: 50px;
         padding: 20px;
+        justify-items: center;
     }
     .card-container{
         grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
+        
+        margin-left: 20px;
+        
+        
     }
+    
     .collection a{
-        margin-left: 200px;
+        margin-left: 180px;
     }
     .featured-product-container{
         flex-direction: column;
@@ -310,6 +322,12 @@ footer .icon{
     .featured-content{
         text-align: center;
     
+    }
+    .featured-image img{
+        height: auto;
+    }
+    footer{
+        margin: 0 auto;
     }
 
 
@@ -340,7 +358,7 @@ footer .icon{
     }
     .card-container{
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+        
     }
     .collection a{
         margin-left: auto;
